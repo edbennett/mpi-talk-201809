@@ -106,7 +106,7 @@
 
 \frame{\titlepage}
 
-\begin{frame}[fragile]{MPI}
+\begin{frame}[fragile]{MPI, briefly}
 	\begin{itemize}[<+->]
 		\item MPI: \textbf{M}essage \textbf{P}assing \textbf{I}nterface
 		\item Born in 1991, now at version 3.1
@@ -115,11 +115,10 @@
 			\item Same program runs multiple times (on one or more nodes)
 			\item Communication is explicit
 		\end{itemize}
-		\item Initialise program with \verb|MPI_Init|, finish with \verb|MPI_Finalize|
-		\item Point-to-point send and receive with \verb|MPI_Send|, \verb|MPI_Recv|
-		\item \textbf{I}mmediate (non-blocking) versions: \verb|MPI_Isend|, \verb|MPI_Irecv|
-		\item Point-to-all operations with \verb|MPI_Bcast|
-		\item Collectives, e.g. \verb|MPI_Reduce|
+		\item Point-to-point send and receive
+		\item \textbf{I}mmediate (non-blocking) versions
+		\item Point-to-all (broadcast) operations
+		\item Collectives, e.g. reductions (sums, maxima, minima, etc.)
 	\end{itemize}
 \end{frame}
 
